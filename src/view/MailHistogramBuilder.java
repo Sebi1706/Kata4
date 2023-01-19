@@ -5,7 +5,7 @@ import model.*;
 
 public class MailHistogramBuilder{
 
-    public Histogram<String> build(List<Mail> lista) {
+    public static Histogram<String> build(List<Mail> lista) {
         Histogram<String> histogram = new Histogram<String>();
         for (Mail mail : lista) {
             histogram.increment(mail.getDomain());
